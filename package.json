@@ -1,0 +1,34 @@
+{
+  "name": "lendloop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LendLoop - neighborhood tool-lending board with Convex, Clerk and n8n automation",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "convex:dev": "convex dev",
+    "convex:deploy": "convex deploy",
+    "test": "tsx --test tests/hmac.test.ts scripts/verify-webhooks.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "build:n8n": "node scripts/build-n8n-workflows.mjs",
+    "validate:n8n": "node scripts/validate-n8n-workflows.mjs"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^7.10.10",
+    "convex": "^1.51.0",
+    "next": "16.4.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "tailwindcss": "^4.1.18",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

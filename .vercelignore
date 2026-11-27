@@ -1,0 +1,12 @@
+# Never upload local secrets to a deployment build.
+.env
+.env.local
+.env.*.local
+
+# Not needed by the Next.js build.
+n8n/
+docs/
+tests/
+scripts/
+docker-compose.yml
+*.md
